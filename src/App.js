@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 import "./App.css"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import PageRoute from "./Components/PageRoute"
 
 class App extends Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <PageRoute value={this.state.page} />
         <Footer />
       </div>
     )
